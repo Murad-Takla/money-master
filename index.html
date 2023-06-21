@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="font-bold text-center text-emerald-300 text-3xl" >Money Master</h1>
+    </header>
+     <main>
+        <section>
+           
+            <div class="flex gap-4 m-8 ">
+                <div class="w-3/5 m-6 p-6">
+                    <img src="money.jpg" alt="">
+                </div>
+                <div class="w-2/5 m-12 bg-gray-100 text-center  font-bold">
+
+                    <h1 class="m-6  text-2xl">Income </h1>
+                    <span>Income:</span>
+                    <input class="text-center" type="text" name="" id="income">
+                    <h1 class="mt-2">Expenses</h1>
+                    
+                    <div class="p-4">
+                    <p >Food: <input class="mt-2 rounded text-center" type="text" id="food"></p>
+                    <p >Rent: <input class="mt-2 rounded text-center" type="text" id="rent"></p>
+                    <p >Clothes: <input class="mt-2 rounded text-center" type="text" id="clothes"></p>
+                    <button id="calculate-btn" class="rounded bg-blue-400 pr-1 pl-1 mt-2 text-white">Calculate</button>
+                  <h2 class="mt-2">Total Expenses: <span id="expense">0000</span></h2>
+                  <h2 class="mt-4">Balance : <span id="balance">0000</span></h2>
+                </div>
+                   
+                <div>
+                    <p>Save: <input id="savings" class="w-1/4 text-center mb-4" type="text" > % <button id="save" class="rounded bg-blue-500 pr-1 pl-1 mt-2 text-white">Save</button></p>
+                    <h3 class="mt-5">Saving Amount: <span id="total-saving-amount">0000</span></h3>
+                    <h3 class="mt-5">Remaining Balance: <span id="remaining">0000</span></h3>
+                </div>
+                </div>
+            </div>
+                
+
+        </section>
+
+     </main>
+     <script src="calculate.js"></script>
+</body>
+</html>
